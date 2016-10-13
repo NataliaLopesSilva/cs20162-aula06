@@ -10,7 +10,7 @@
          mvn package -P cobertura
          Compila, executa testes e elabora relatório de cobertura.
 
-         mvn exec:java -Dexec.mainClass="com.github.natalialopessilva.cs2016.aula07"
+         mvn exec:java -Dexec.mainClass="com.github.natalialopessilva.cs2016.aula06"
          Executa o programa DiaSemana
     -->
 
@@ -25,7 +25,7 @@
         Projeto de referência (exemplo) inicial de desenvolvimento em Java com uso de JUnit.
     </description>
 
-    <url>https://github.com/NataliaLopesSilva/cs20162/aula07</url>
+    <url>https://github.com/NataliaLopesSilva/cs20162/aula06</url>
 
     <organization>
         <name>Instituto de Informática (UFG) - Fábrica de Software</name>
@@ -55,9 +55,9 @@
     </developers>
 
     <scm>
-        <connection>scm:git:https://github.com/NataliaLopesSilva/cs20162-aula07.git</connection>
-        <developerConnection>scm:git:https://github.com/NataliaLopesSilva/cs20162-aula07.git</developerConnection>
-        <url>https://github.com/NataliaLopesSilva/cs20162-aula07</url>
+        <connection>scm:git:https://github.com/NataliaLopesSilva/cs20162-aula06.git</connection>
+        <developerConnection>scm:git:https://github.com/NataliaLopesSilva/cs20162-aula06.git</developerConnection>
+        <url>https://github.com/NataliaLopesSilva/cs20162-aula06</url>
     </scm>
 
     <properties>

@@ -1,0 +1,44 @@
+import com.github.natalialopessilva.cs20162.aula06.CPF3;
+import org.junit.Assert;
+import org.junit.Test;
+
+public class CPF3Test {
+
+    int d[];
+
+    @Test(expected = IllegalArgumentException.class)
+    public void verificaPosicoesVetor() {
+        d = new int[]{1, 2, 3, 4, 5, 7, 8, 9};
+
+        CPF3.verificaDigitosVerificadores(d);
+    }
+    
+    @Test
+    public void resultadoEsperadoTrue()
+    {
+        d = new int [] {0,5,7,2,5,1,5,9,1,0,8};
+        
+        Assert.assertTrue(CPF3.verificaDigitosVerificadores(d));
+    }
+
+    @Test
+    public void resultadoEsperadoFalse()
+    {
+        d = new int [] {0,5,7,2,5,1,5,9,1,1,8};
+        
+        Assert.assertFalse(CPF3.verificaDigitosVerificadores(d));
+    }
+    
+    @Test
+    public void resultadoEsperadoFalse2()
+    {
+        d = new int [] {0,5,7,2,5,1,5,9,1,0,9};
+        
+        Assert.assertFalse(CPF3.verificaDigitosVerificadores(d));
+    }
+
+    @Test(expected = UnsupportedOperationException.class)
+    public void obterCoberturaCemPorCento() {
+        CPF3 cpF3 = new CPF3();
+    }
+}

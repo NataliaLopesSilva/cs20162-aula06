@@ -10,7 +10,7 @@
                 <goal>org.codehaus.mojo:exec-maven-plugin:1.2.1:exec</goal>
             </goals>
             <properties>
-                <exec.args>-classpath %classpath com.github.NataliaLopes.exercicios</exec.args>
+                <exec.args>-classpath %classpath com.github.NataliaLopes.cs2016-aula06</exec.args>
                 <exec.executable>java</exec.executable>
             </properties>
         </action>
