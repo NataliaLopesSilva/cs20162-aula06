@@ -1,7 +1,7 @@
-# cs20162-aula07
+# cs20162-aula06
 
-<-- Ordem de serviço -->
+<-- Confirmação de Digitos verificadores -->
 < Aluna responsável: Natália Lopes >
 
-# Necessidade do cliente
-Método para identificação do dia da semana de uma data observando várias restrições...
+# Verificação de CPF
+Através de Cáculos é possível verificar a validade de um CPF, verificando os dígitos verificadores...
