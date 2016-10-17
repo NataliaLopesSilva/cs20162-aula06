@@ -1,3 +1,4 @@
+
 import com.github.natalialopessilva.cs20162.aula06.CPF2;
 import org.junit.Assert;
 import org.junit.Test;
@@ -21,23 +22,21 @@ public class CPF2Test {
     }
 
     @Test
-    public void resultadoEsperadoFalse()
-    {
-        d = new int [] {0,5,7,2,5,1,5,9,1,1,8};
-        
-        Assert.assertFalse(CPF2.verificaDigitosVerificadores(d));
-    }
-    
-    @Test
-    public void resultadoEsperadoFalse2()
-    {
-        d = new int [] {0,5,7,2,5,1,5,9,1,0,9};
-        
+    public void resultadoEsperadoFalse() {
+        d = new int[]{0, 5, 7, 2, 5, 1, 5, 9, 1, 1, 8};
+
         Assert.assertFalse(CPF2.verificaDigitosVerificadores(d));
     }
 
-    @Test(expected = UnsupportedOperationException.class)
+    @Test
+    public void resultadoEsperadoFalse2() {
+        d = new int[]{0, 5, 7, 2, 5, 1, 5, 9, 1, 0, 9};
+
+        Assert.assertFalse(CPF2.verificaDigitosVerificadores(d));
+    }
+
+    @Test
     public void obterCoberturaCemPorCento() {
-        CPF2 cpF2 = new CPF2();
+        CPF2.setCPF2();
     }
 }

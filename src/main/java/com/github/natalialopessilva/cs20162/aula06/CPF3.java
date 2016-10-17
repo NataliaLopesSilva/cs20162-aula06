@@ -11,8 +11,14 @@ public class CPF3 {
     /**
      * Construtor da classe CPF2.
      */
-    public CPF3() {
-        throw new UnsupportedOperationException();
+    protected CPF3() {
+    }
+
+    /**
+     * Método que acessa o construtor.
+     */
+    public static void setCPF3() {
+        CPF3 meuCpf3 = new CPF3();
     }
 
     /**

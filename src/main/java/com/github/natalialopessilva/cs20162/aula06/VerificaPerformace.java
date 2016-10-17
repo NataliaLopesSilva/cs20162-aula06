@@ -13,8 +13,16 @@ public class VerificaPerformace {
     /**
      * Construtor da classe VerificaPerformace.
      */
-    public VerificaPerformace() {
-        throw new UnsupportedOperationException();
+    protected VerificaPerformace() {
+    }
+
+    /**
+     * Método que acessa o construtor.
+     */
+    public static void setVerificaPerformace() {
+        VerificaPerformace verificaPerformace = new VerificaPerformace();
+        String[] args = null;
+        verificaPerformace.main(args);
     }
 
     /**

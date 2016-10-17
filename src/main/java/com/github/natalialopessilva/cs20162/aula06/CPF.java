@@ -13,8 +13,14 @@ public class CPF {
     /**
      * Construtor da classe CPF.
      */
-    public CPF() {
-        throw new UnsupportedOperationException();
+    protected CPF() {
+    }
+
+    /**
+     * Método que acessa o construtor.
+     */
+    public static void setCPF() {
+        CPF meuCpf = new CPF();
     }
 
     /**
