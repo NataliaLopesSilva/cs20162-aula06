@@ -11,20 +11,7 @@ package com.github.natalialopessilva.cs20162.aula06;
  * Algoritmo correspondente obtido da Lista de exercícios correspondentes a aula
  * 6, da disciplina Construção de software do prof. Fábio Nogueira de Lucena.
  */
-public class CPF3 {
-
-    /**
-     * Construtor da classe CPF2.
-     */
-    protected CPF3() {
-    }
-
-    /**
-     * Método que acessa o construtor.
-     */
-    public static void setCPF3() {
-        CPF3 meuCpf3 = new CPF3();
-    }
+public final class CPF3 {
 
     /**
      * Número que indica o primeiro digito.
@@ -87,6 +74,13 @@ public class CPF3 {
     public static final int TAMANHO_CPF = 11;
 
     /**
+     * Construtor da classe CPF3 que impede que a mesma seja instanciada ou
+     * acessada.
+     */
+    protected CPF3() {
+    }
+
+    /**
      * Verifica se os dois últimos digitos estão válidos (DigitosVerificadores).
      *
      * @param d Um cpf de entrada para verificação.
@@ -103,7 +97,9 @@ public class CPF3 {
                     + "dígitos");
         }
 
-        int c = DIGITO_8, p = d[DIGITO_9 - 1], s = d[DIGITO_9 - 1];
+        int c = DIGITO_8;
+        int p = d[DIGITO_9 - 1];
+        int s = d[DIGITO_9 - 1];
 
         p = p + d[DIGITO_8 - 1];
         s += p;

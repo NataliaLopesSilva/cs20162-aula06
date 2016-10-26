@@ -13,20 +13,7 @@ package com.github.natalialopessilva.cs20162.aula06;
  * 6, da disciplina Construção de software do prof. Fábio Nogueira de Lucena.
  *
  */
-public class CPF {
-
-    /**
-     * Construtor da classe CPF.
-     */
-    protected CPF() {
-    }
-
-    /**
-     * Método que acessa o construtor.
-     */
-    public static void setCPF() {
-        CPF meuCpf = new CPF();
-    }
+public final class CPF {
 
     /**
      * Número que indica o primeiro digito.
@@ -87,6 +74,13 @@ public class CPF {
      * Número que indica o tamanho do CPF.
      */
     public static final int TAMANHO_CPF = 11;
+
+    /**
+     * Construtor da classe CPF que impede que a mesma seja instanciada ou
+     * acessada.
+     */
+    private CPF() {
+    }
 
     /**
      * Verifica se os dois últimos digitos estão válidos(DigitosVerificadores).

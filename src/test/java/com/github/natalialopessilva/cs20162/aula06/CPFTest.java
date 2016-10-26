@@ -1,6 +1,5 @@
+package com.github.natalialopessilva.cs20162.aula06;
 
-import com.github.natalialopessilva.cs20162.aula06.CPF;
-import static com.github.natalialopessilva.cs20162.aula06.CPF.setCPF;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -34,10 +33,5 @@ public class CPFTest {
         d = new int[]{0, 5, 7, 2, 5, 1, 5, 9, 1, 0, 9};
 
         Assert.assertFalse(CPF.verificaDigitosVerificadores(d));
-    }
-
-    @Test
-    public void obterCoberturaCemPorCento() {
-        setCPF();
     }
 }

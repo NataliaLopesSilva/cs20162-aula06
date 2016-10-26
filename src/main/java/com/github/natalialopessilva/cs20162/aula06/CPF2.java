@@ -13,20 +13,7 @@ package com.github.natalialopessilva.cs20162.aula06;
  * 6, da disciplina Construção de software do prof. Fábio Nogueira de Lucena.
  *
  */
-public class CPF2 {
-
-    /**
-     * Construtor da classe CPF2.
-     */
-    protected CPF2() {
-    }
-
-    /**
-     * Método que acessa o construtor.
-     */
-    public static void setCPF2() {
-        CPF2 meuCpf2 = new CPF2();
-    }
+public final class CPF2 {
 
     /**
      * Número que indica o oitavo digito.
@@ -54,6 +41,13 @@ public class CPF2 {
     public static final int TAMANHO_CPF = 11;
 
     /**
+     * Construtor da classe CPF2 que impede que a mesma seja instanciada ou
+     * acessada.
+     */
+    private CPF2() {
+    }
+
+    /**
      * Verifica se os dois últimos digitos estão válidos (DigitosVerificadores).
      *
      * @param d Um cpf de entrada para verificação.
@@ -70,7 +64,9 @@ public class CPF2 {
                     + "dígitos");
         }
 
-        int c = DIGITO_8, p = d[DIGITO_9 - 1], s = d[DIGITO_9 - 1];
+        int c = DIGITO_8;
+        int p = d[DIGITO_9 - 1];
+        int s = d[DIGITO_9 - 1];
 
         while (c >= 1) {
             p = p + d[c - 1];

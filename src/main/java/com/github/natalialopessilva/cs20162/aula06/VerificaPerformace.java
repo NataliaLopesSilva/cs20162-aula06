@@ -2,7 +2,6 @@
  * Copyright (c) 2016. Fábrica de Software - Instituto de Informática (UFG)
  * Creative Commons Attribution 4.0 International License.
  */
-
 package com.github.natalialopessilva.cs20162.aula06;
 
 /**
@@ -13,22 +12,7 @@ package com.github.natalialopessilva.cs20162.aula06;
  * 6, da disciplina Construção de software do prof. Fábio Nogueira de Lucena.
  *
  */
-public class VerificaPerformace {
-
-    /**
-     * Construtor da classe VerificaPerformace.
-     */
-    protected VerificaPerformace() {
-    }
-
-    /**
-     * Método que acessa o construtor.
-     */
-    public static void setVerificaPerformace() {
-        VerificaPerformace verificaPerformace = new VerificaPerformace();
-        String[] args = null;
-        verificaPerformace.main(args);
-    }
+public final class VerificaPerformace {
 
     /**
      * Número que indica o segundo digito.
@@ -61,6 +45,13 @@ public class VerificaPerformace {
     public static final int TAMANHO_LACO = 1000000;
 
     /**
+     * Construtor da classe VerificaPerformace que impede que a mesma seja
+     * instanciada ou acessada.
+     */
+    protected VerificaPerformace() {
+    }
+
+    /**
      * Verifica a difirença em nanosegundos de um algoritmo para o outro.
      *
      * @param args Como Argumentos da classe principal.
@@ -70,7 +61,8 @@ public class VerificaPerformace {
         int[] d = {0, DIGITO_5, DIGITO_7, DIGITO_2, DIGITO_5, 1, DIGITO_5,
             DIGITO_9, 1, 0, DIGITO_8};
 
-        long inicio = 0, fim = 0;
+        long inicio = 0;
+        long fim = 0;
 
         //Execução de CPF.
         inicio = System.nanoTime();

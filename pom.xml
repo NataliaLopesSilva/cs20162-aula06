@@ -15,7 +15,7 @@
     -->
 
     <groupId>com.github.NataliaLopesSilva</groupId>
-    <artifactId>cs20162-aula07</artifactId>
+    <artifactId>cs20162-aula06</artifactId>
     <packaging>jar</packaging>
     <version>1.0.0</version>
 
@@ -46,7 +46,7 @@
 
     <developers>
         <developer>
-            <id>NataliLopesSilva</id>
+            <id>NataliaLopesSilva</id>
             <name>Natália Lopes da Silva</name>
             <email>natalialopescig@gmail.com</email>
             <organization>Instituto de Informática (UFG)</organization>
